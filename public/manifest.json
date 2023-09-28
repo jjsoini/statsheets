@@ -1,0 +1,16 @@
+{
+    "name": "DummySheet",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "icon": "/icon.svg",
+    "author": "kurara ara",
+    "description": "A dummy-simple customisable character sheet.",
+    "homepage_url": "https://www.dummysheet.com",
+    "action": {
+      "title": "DummySheet",
+      "icon": "/icon.svg",
+      "popover": "/",
+      "height": 1200,
+      "width": 700
+    }
+  }
