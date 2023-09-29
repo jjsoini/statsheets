@@ -6,7 +6,7 @@
 
     function exportFile (){
         let dl = JSON.stringify($sheet);
-        let filename = "DummySheet-" + $sheet.name + "-" +  Date.now() + ".json";
+        let filename = "Sheet-" + $sheet.name + "-" +  Date.now() + ".json";
         var blob = new Blob([dl], {type: "application/json"});
         saveAs(blob, filename);
     }

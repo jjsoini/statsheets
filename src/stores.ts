@@ -167,13 +167,13 @@ const initialSheet = {
     ]
   }
 const initialTheme = {
-    primary:        "255,255,255",
-    secondary:      "42,42,42",
-    accent:         "255,213,140",
-    textShadow:     "1px 1px 2px #000000"
+    primary:        "65,65,65",
+    secondary:      "246,245,241",
+    accent:         "20,20,20",
+    textShadow:     "1px 1px 2px rgba(0,0,0,0)"
 };
 
 export const editing = writable(false);
 export const listMode = writable(false);
-export const sheet = localStore('dummy-sheet', initialSheet);
-export const theme = localStore('dummy-sheet-theme', initialTheme);
+export const sheet = localStore('statsheet', initialSheet);
+export const theme = localStore('statsheet-theme', initialTheme);

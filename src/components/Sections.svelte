@@ -3,6 +3,7 @@
 
     // Import components
     import Section from "./Section.svelte";
+    import SectionRow from "./SectionRow.svelte";
 
     // Import stores
     import { listMode } from '../stores'
@@ -18,7 +19,7 @@
 {#if $listMode}
 <div class="list">
     {#each sections as section (section.id)}
-        <Section bind:section={section} on:removeSection={e => removeSection(e.detail)}/>
+        <SectionRow bind:section={section} on:removeSection={e => removeSection(e.detail)}/>
     {/each}
 </div>
 {:else}

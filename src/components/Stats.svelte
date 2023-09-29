@@ -60,7 +60,7 @@
         width: 100%;
     }
     tr:nth-last-child(2n+1) {
-        background: rgba(var(--accent), 0.05);
+        background: rgba(var(--accent), 0.07);
     }
     td {
         white-space: pre-wrap;

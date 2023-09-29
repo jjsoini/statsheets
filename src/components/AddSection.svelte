@@ -11,6 +11,8 @@
         { 
             id: newSectionId, 
             name: "New Section", 
+            imageURL: "",
+            notes: "",
             stats: [
                 {
                     id: 1,

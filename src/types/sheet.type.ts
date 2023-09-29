@@ -9,6 +9,7 @@ export type DummySheet = {
 export type DummySheetSection = {
     id: number;
     name: string;
+    imageURL: string;
     notes: string;
     stats: Array<DummySheetStats>;
 }
