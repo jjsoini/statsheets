@@ -4,11 +4,13 @@ import { localStore } from './localStore';
 const initialSheet = {
     id: 1,
     name: "Example Sheet",
+    description: "This is some description",
     notes: "Welcome to the DummySheet for little dummies.\nIt's a dummy-simple sheet for storing character data. If you're constantly changing systems, and you don't have time to wait for a nice dev to implement your character sheet, then DummySheet is for you. Open it up, edit your sheet, and get to playing.\n\n\n\n___________________________________\nTo use:\n• Edit the righthand columns by clicking on them.\n• The EDIT button lets you edit the left columns, section titles, and just about everything else.\n• You can also change the theme by clicking on the colour boxes, if you want something cheerier.\n• EXPORT your character to a convenient JSON file...\n• ... and you can IMPORT it back again.\n• Have a fun time.",
     sections: [
       {
         id: 1,
         name: "Character",
+        notes: "Short description here.",
         stats: [
           {
             id: 1,
@@ -45,6 +47,7 @@ const initialSheet = {
       {
         id: 2,
         name: "Attributes",
+        notes: "Short description here.",
         stats: [
           {
             id: 1,
@@ -81,6 +84,7 @@ const initialSheet = {
       {
         id: 3,
         name: "Saves",
+        notes: "Short description here.",
         stats: [
           {
             id: 1,
@@ -112,6 +116,7 @@ const initialSheet = {
       {
         id: 4,
         name: "Weapons",
+        notes: "Short description here.",
         stats: [
           {
             id: 1,
@@ -128,6 +133,7 @@ const initialSheet = {
       {
         id: 5,
         name: "Spell List",
+        notes: "Short description here.",
         stats: [
           {
             id: 1,
@@ -144,6 +150,7 @@ const initialSheet = {
       {
         id: 6,
         name: "Inventory",
+        notes: "Short description here.",
         stats: [
           {
             id: 1,
@@ -167,5 +174,6 @@ const initialTheme = {
 };
 
 export const editing = writable(false);
+export const listMode = writable(false);
 export const sheet = localStore('dummy-sheet', initialSheet);
 export const theme = localStore('dummy-sheet-theme', initialTheme);

@@ -38,7 +38,7 @@
 
   </main>
   <footer>
-    <a target="_blank" href="https://github.com/kurara-ara/dummy-sheet">Github</a>
+    <a target="_blank" href="/">Github</a>
   </footer>
 </Themer>
 

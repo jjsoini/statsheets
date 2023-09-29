@@ -11,16 +11,15 @@
 <div>
     <h2>Notes</h2>
     {#if editable}
-    <pre bind:innerText={notes} contenteditable="true"></pre>
+    <p bind:innerText={notes} contenteditable="true"></p>
     {:else}
-    <pre>{notes}</pre>
+    <p>{notes}</p>
     {/if}
 </div>
 
 <style>
-    pre {
+    p {
         border-radius: 0;
-        font-family: "Jost", sans-serif;
         color: rgba(var(--primary));
         text-shadow: var(--shadow);
         white-space: pre-wrap;
@@ -32,12 +31,8 @@
     }
     div {
         margin-bottom:2rem;
-        padding: 1rem 0.5rem;
-        border-width: 0.15rem;
-        border-style: solid;
-        border-image: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(var(--accent)), rgba(0, 0, 0, 0)) 1 100%;
-        border-right: none;
+        padding: 1.2rem 1rem;
+        border-top: 1px solid rgba(0,0,0,0.1);
     }
     h2 {
         text-shadow: var(--shadow);
