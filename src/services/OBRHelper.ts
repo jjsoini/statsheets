@@ -7,6 +7,7 @@ import { writable, get } from "svelte/store";
 let initViewingSheet:any = {
   id: 0,
   name: "",
+  description: "",
   notes: "",
   sections: [
     {
